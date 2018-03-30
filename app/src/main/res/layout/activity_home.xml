@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.main.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_button_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+
+            android:id="@+id/rb_order"
+            style="@style/CustomRadioButton"
+            android:checked="true"
+            android:text="@string/order"
+            android:textColor="@color/light_blue" />
+
+        <RadioButton
+            android:id="@+id/rb_goods"
+            style="@style/CustomRadioButton"
+            android:text="@string/goods" />
+
+        <RadioButton
+            android:id="@+id/rb_inventory"
+            style="@style/CustomRadioButton"
+            android:text="@string/inventory" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/CustomRadioButton"
+            android:text="@string/setting" />
+
+    </RadioGroup>
+
+</RelativeLayout>
